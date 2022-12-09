@@ -9,8 +9,70 @@
     <script src="https://kit.fontawesome.com/c3c7af3293.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="top">
+                <div class="top-text">
+                    <span>سلام دوست من به وبسایت ما خوش آمدید.</span>
+                    <div class="icons">
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bottom-text">
+                    <div class="hours-of-work">
+                        <div class="times">
+                            <span>شنبه تا پنجشنبه 8 صبح تا 18 بعد از ظهر</span>
+                            <span>جمعه تعطیل</span>
+                        </div>
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="address">
+                        <span>تهران خیابان آذربایجان شرقی نرسیده به کارگر پلاک 145</span>
+                        <i class="fa-solid fa-map-location"></i>
+                    </div>
+                    <div class="phone-number">
+                        <div class="numbers">
+                            <span>تلفن : 0216645911</span>
+                            <span>همراه : 09124596255</span>
+                        </div>
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header-text">
+            <h1>شرکت فنی مهندسی تاپ لرن</h1>
+            <h2 id="typed"></h2>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">صفحه اول</a></li>
+                <li><a href="#">خدمات ما</a></li>
+                <li><a href="#">امکانات</a></li>
+                <li><a href="#">درباره شرکت</a></li>
+                <li><a href="#">تماس باما</a></li>
+            </ul>
+            <img src="images/logo.svg" alt="">
+        </div>
+    </nav>
 
-    <script src="script.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+          strings : ['یعنی بروزترین ابزارها','تضمین صددرصدی کار','با مهندسین مجرب'],
+          loop : true,
+          typeSpeed : 30,
+          backSpeed : 30
+        });
+    </script>
 </body>
 </html>
