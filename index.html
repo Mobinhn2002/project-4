@@ -89,6 +89,31 @@
             </div>
         </div>
     </section>
+    <section id="service">
+        <div class="overlay"></div>
+        <div class="container">
+            <h3>خدمات دیگر ما</h3>
+            <div class="content">
+                <div class="buttons">
+                    <button id="item-one" class="active">نقشه کشی <i class="fa-solid fa-ruler-vertical"></i></button>
+                    <button id="item-two">داربست <i class="fa-solid fa-pencil"></i></button>
+                    <button id="item-three">نقاشی <i class="fa-solid fa-paint-roller"></i></button>
+                    <button id="item-four">بتن ریزی <i class="fa-solid fa-helmet-safety"></i></button>
+                    <button id="item-five">تخریب <i class="fa-solid fa-hammer"></i></button>
+                </div>
+                <div class="main-content">
+                    <div class="right">
+                        <h4>نقشه کشی ساختمان</h4>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                    </div>
+                    <div class="left">
+                        <img src="images/map.jpg" alt="">
+                    </div>
+                </div>
+                <p class="footer"><button>اطلاعات بیشتر ...</button></p>
+            </div>
+        </div>
+    </section>
 
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/script.js"></script>
@@ -100,6 +125,33 @@
           typeSpeed : 30,
           backSpeed : 30
         });
+
+
+        $('section#service .buttons button').click(function(){
+            $('section#service button').removeClass('active')
+            $(this).addClass('active')
+            switch($(this).attr("id")){
+                case 'item-one':
+                    $('#service .right h4').text("نقشه کشی ساختمان")
+                    $('#service .left img').attr('src','images/map.jpg')
+                    break;
+                case 'item-two':
+                    $('#service .right h4').text("داربست")
+                    $('#service .left img').attr('src','images/darbast.jpg')
+                    break;
+                case 'item-three':
+                    $('#service .right h4').text("نقاشی")
+                    $('#service .left img').attr('src','images/1417.jpg')
+                    break;
+                case 'item-four':
+                    $('#service .right h4').text("بتن ریزی")
+                    $('#service .left img').attr('src','images/betonriz.jpg')
+                    break;
+                case 'item-five':
+                    $('#service .right h4').text("تخریب")
+                    $('#service .left img').attr('src','images/takhrib.jpg')
+            }
+        })
     </script>
 </body>
 </html>

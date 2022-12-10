@@ -233,3 +233,123 @@ nav .container img{
 #base-story .content .Services .item span{
     font-size: 14px;
 }
+
+/*service*/
+
+#service{
+    position: relative;
+    width: 100%;
+    height: 470px;
+    background: url('images/coverservice.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#service .container{
+    width: 75%;
+    z-index: 1;
+}
+#service .container h3{
+    position: relative;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: white;
+}
+#service .container h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(247, 160, 0);
+}
+#service .container .content .buttons{
+    width: 100%;
+    display: flex;
+}
+#service .container .content .buttons button{
+    position: relative;
+    flex: 1;
+    height: 40px;
+    border: none;
+    background-color: rgb(247, 160, 0);
+    margin-left: 2px;
+    color: white;
+    font-family: vazir;
+    cursor: pointer;
+}
+#service .container .content .buttons button:last-child{
+    margin-left: 0;
+}
+#service .container .content .buttons button.active{
+    background-color: rgba(255, 166, 0, 0.514);
+}
+#service .container .content .buttons button:hover{
+    background-color: rgb(255, 178, 36);
+}
+#service .container .content .buttons button i{
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: rgb(38, 36, 49);
+    font-size: 22px;
+}
+#service .container .content .buttons button.active i{
+    color: white;
+}
+#service .container .content .main-content{
+    display: flex;
+    width: 100%;
+    height: 210px;
+    padding: 40px 10px 30px;
+    box-sizing: border-box;
+    background-color: white;
+}
+#service .container .content .main-content .right{
+    flex: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#service .container .content .main-content .right h4{
+    margin-top: 0;
+}
+#service .container .content .main-content .right p{
+    font-size: 12px;
+}
+#service .container .content .main-content .left{
+    flex: 1;
+}
+#service .container .content .main-content .left img{
+    width: 100%;
+    height: 100%;
+}
+#service .container .content .footer{
+    background-color: rgb(247, 160, 0);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+}
+#service .container .content .footer button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: vazir;
+    transition: all .4s;
+    cursor: pointer;
+}
+#service .container .content .footer button:hover{
+    color: rgb(71, 71, 71);
+}
