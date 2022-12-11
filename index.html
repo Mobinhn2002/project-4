@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightslider.min.css">
     <script src="https://kit.fontawesome.com/c3c7af3293.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -168,10 +169,54 @@
         <h1>آنها به آرزوهای تو میخندند تا زمانی که بتوانی از آرزوهات پول در بیاوری</h1>
         <button>اینجا کلیک کنید</button>
     </section>
+    <section id="projects">
+        <div class="header">
+            <h2>پروژه ها</h2>
+            <button>اینجا کلیک کنید</button>
+        </div>
+        <ul id="lightSlider">
+            <li>
+                <div>
+                    <img src="images/project1.jpg" alt="">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/project2.jpg" alt="">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/sonat.jpg" alt="">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/project4.jpg" alt="">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/project5.jpg" alt="">
+                    <h3>لورم ایپسوم</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/typed.min.js"></script>
+    <script src="js/lightslider.min.js"></script>
     <script>
         var typed = new Typed('#typed', {
           strings : ['یعنی بروزترین ابزارها','تضمین صددرصدی کار','با مهندسین مجرب'],
@@ -179,7 +224,6 @@
           typeSpeed : 30,
           backSpeed : 30
         });
-
 
         $('section#service .buttons button').click(function(){
             $('section#service button').removeClass('active')
@@ -206,6 +250,16 @@
                     $('#service .left img').attr('src','images/takhrib.jpg')
             }
         })
+
+        $("#lightSlider").lightSlider({
+            rtl : true,
+            item : 4,
+            loop : true,
+            pager : false,
+            auto : true,
+            pause : 3000
+        }); 
+        
     </script>
 </body>
 </html>
