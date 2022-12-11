@@ -353,3 +353,95 @@ nav .container img{
 #service .container .content .footer button:hover{
     color: rgb(71, 71, 71);
 }
+
+/*about-us*/
+
+#about-us{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-us .container{
+    display: flex;
+    width: 70%;
+    height: 200px;
+}
+#about-us .container .right{
+    flex: 2;
+    margin-left: 25px;
+    text-align: justify;
+}
+#about-us .container .right .title{
+    position: relative;
+    padding: 5px 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#about-us .container .right .title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 40px;
+    background-color: rgb(247, 160, 0);
+}
+#about-us .container .right p{
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+#about-us .container .right button{
+    width: 100%;
+    height: 40px;
+    font-family: vazir;
+    background-color: transparent;
+    border: 2px solid rgb(247, 171, 32);
+    cursor: pointer;
+    transition: all .2s;
+}
+#about-us .container .right button:hover{
+    background-color: rgb(247, 171, 32);
+    color: white;
+}
+#about-us .container .left{
+    flex: 3;
+    display: flex;
+}
+#about-us .container .left .image{
+    position: relative;
+    width: 33%;
+    height: 100%;
+    margin: 0 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#about-us .container .left .image img{
+    width: 100%;
+    height: 100%;
+}
+#about-us .container .left .image .slide{
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.808);
+    transition: all .4s;
+}
+#about-us .container .left .image:hover .slide{
+    bottom: 0;
+}
+#about-us .container .left .image .slide .icons{
+    margin: 5px;
+}
+#about-us .container .left .image .slide h4{
+    margin: 0;
+}
