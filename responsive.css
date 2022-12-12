@@ -1,0 +1,210 @@
+@media screen and (max-width:1200px){
+    header nav .bottom .bottom-text{
+        width: 95%;
+    }
+    #base-story .video::before{
+        display: none;
+    }
+    #base-story .video::after{
+        display: none;
+    }
+    #about-us .container{
+        width: 80%;
+    }
+    #partner img{
+        width: 20%;
+    }
+}
+@media screen and (max-width:992px){
+    header nav .bottom .bottom-text span{
+        font-size: 12px;
+    }
+    header nav .bottom .bottom-text i{
+        font-size: 20px;
+    }
+    header .header-text h1{
+        font-size: 40px;
+    }
+    header .header-text h2{
+        font-size: 30px;
+    }
+    #base-story{
+        width: 95%;
+    }
+    #base-story .content .Services{
+        flex-direction: column;
+        align-items: center;
+    }
+    #base-story .content .Services>div{
+        width: 250px;
+        margin: 5px 0;
+    }
+    #base-story .content .Services .item{
+        height: 60px;
+    }
+    #base-story .content .Services .item i{
+        display: none;
+    }
+    #base-story .content .Services .item::before{
+        display: none;
+    }
+    #base-story .video{
+        width: 50%;
+    }
+    #service .container .content .buttons button i{
+        display: none;
+    }
+    #service .container .content .main-content .right{
+        padding-top: 0;
+    }
+    #about-us .container{
+        width: 90%;
+    }
+    #biutitext h1{
+        font-size: 20px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    #projects{
+        width: 80%;
+    }
+    #partner{
+        height: 200px;
+    }
+    footer .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px){
+    header nav .bottom .bottom-text>div{
+        width: 190px;
+    }
+    header nav .bottom .bottom-text i{
+        margin-left: 10px;
+    }
+    nav .container{
+        width: 90%;
+    }
+    nav .container ul li a{
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    #service .container .content .main-content .left{
+        display: none;
+    }
+    #service .container .content .footer button{
+        font-size: 14px;
+    }
+    #about-us{
+        align-items: flex-start;
+        margin-top: 60px;
+        height: 500px;
+    }
+    #about-us .container{
+        flex-direction: column;
+    }
+    #about-us .container .right{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #about-us .container .right .title{
+        text-align: right;
+    }
+    #about-us .container .right button{
+        width: 50%;
+    }
+    #about-us .container .left{
+        justify-content: center;
+    }
+    #about-us .container .left .image{
+        width: 150px;
+        height: 200px;
+    }
+    #about-us .container .left .image .slide i{
+        font-size: 14px;
+    }
+    #about-us .container .left .image .slide h4{
+        font-size: 14px;
+    }
+    #projects{
+        width: 90%;
+        height: 300px;
+    }
+    #projects #lightSlider li h3{
+        display: none;
+    }
+    #projects #lightSlider li p{
+        display: none;
+    }
+    #partner{
+        height: 150px;
+    }
+    footer .container{
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px){
+    header nav .top .top-text{
+        width: 90%;
+    }
+    header nav .top .top-text span{
+        font-size: 12px;
+    }
+    header nav .bottom{
+        height: auto;
+    }
+    header nav .bottom .bottom-text i{
+        display: none;
+    }
+    header nav .bottom .bottom-text>div{
+        margin:  0 20px;
+    }
+    header .header-text h1{
+        font-size: 30px;
+    }
+    header .header-text h2{
+        font-size: 20px;
+    }
+    nav .container{
+        width: 95%;
+        justify-content: center;
+    }
+    nav .container ul li a{
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    nav .container ul li a::after{
+        bottom: -18px;
+    }
+    nav .container img{
+        display: none;
+    }
+    #base-story .video{
+        display: none;
+    }
+    #base-story{
+        flex-direction: column;
+    }
+    #base-story .content{
+        width: 80%;
+        margin-top: 80px;
+    }
+    #base-story .content .Services{
+        flex-direction: row;
+    }
+    #base-story .content .Services .item{
+        width: 24%;
+    }
+    #service .container .content .main-content .right h4{
+        margin-bottom: 0;
+    }
+    #projects #lightSlider li{
+        height: 80px;
+    }
+    #projects #lightSlider li img{
+        height: 120px;
+    }
+    #partner img{
+        height: 100px;
+    }
+}

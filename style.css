@@ -205,6 +205,10 @@ nav .container img{
 #base-story .content .Services{
     display: flex;
 }
+#base-story .content .Services>div{
+    display: flex;
+    flex: 1;
+}
 #base-story .content .Services .item{
     position: relative;
     flex: 1;
@@ -477,7 +481,6 @@ nav .container img{
     width: 70%;
     padding-bottom: 60px;
     margin: 0 auto;
-
 }
 #projects .header{
     display: flex;
