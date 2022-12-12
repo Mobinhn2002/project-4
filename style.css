@@ -539,3 +539,16 @@ nav .container img{
     font-size: 13px;
     padding: 0 5px;
 }
+
+/*partner*/
+
+#partner{
+    height: 250px;
+    background-color: rgb(255, 166, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#partner img{
+    margin: 0 10px;
+}
