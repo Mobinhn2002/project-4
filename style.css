@@ -552,3 +552,137 @@ nav .container img{
 #partner img{
     margin: 0 10px;
 }
+
+/*footer*/
+
+footer{
+    position: relative;
+    height: 500px;
+    background-image: url('images/footer.jpg');
+    background-color: #1d1d1fd5;
+    background-blend-mode: darken;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+footer .container{
+    width: 70%;
+}
+footer .container .top{
+    height: 100px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    display: flex;
+}
+footer .container .top .right{
+    flex: 3;
+}
+footer .container .top .right h3{
+    margin: 0;
+    color: rgb(255, 166, 0);
+}
+footer .container .top .right p{
+    font-size: 14px;
+    padding-left: 20px;
+    color: white;
+}
+footer .container .top .left{
+    flex: 2;
+}
+footer .container .top .left .input input{
+    width: 70%;
+    padding: 6px;
+    font-size: 12px;
+    font-family: vazir;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(255, 166, 0);
+    border-radius: 2px;
+}
+footer .container .top .left .input button{
+    width: 25%;
+    padding: 6px;
+    font-size: 12px;
+    font-family: vazir;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+footer .container .top .left .icons{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+footer .container .top .left .icons i{
+    margin: 0 10px;
+    cursor: pointer;
+}
+footer .container .bottom{
+    height: 300px;
+    display: flex;
+}
+footer .container .bottom h4{
+    color: rgb(255, 166, 0);
+}
+footer .container .bottom>div{
+    width: 33.3%;
+    height: 100%;
+}
+footer .container .bottom>div .item{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 70px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid lightgrey;
+    cursor: pointer;
+}
+footer .container .bottom div .item.second-column{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+    color: rgb(255, 166, 0);
+}
+footer .container .bottom div .item:hover{
+    border-bottom: 2px solid rgb(255, 166, 0);
+    background-color: rgba(146, 146, 146, 0.651);
+}
+footer .container .bottom div .item .text{
+    width: 200px;
+}
+footer .container .bottom div .item .text h5{
+    margin: 0;
+    color: orange;
+}
+footer .container .bottom div .item .text p{
+    font-size: 12px;
+    color: white;
+}
+footer .container .bottom div .item img{
+    width: 100px;
+    height: 90%;
+}
+footer .end-of-page{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    background-color: #202020;
+    text-align: center;
+}
+footer .end-of-page p{
+    font-size: 14px;
+    margin: 0;
+}
+footer .end-of-page p.legal{
+    margin-top: 6px;
+    font-size: 12px;
+}
